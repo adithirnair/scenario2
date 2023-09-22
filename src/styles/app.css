@@ -1,0 +1,80 @@
+/* Base styles for larger screens */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #361891;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    margin-top: 20px;
+  }
+  
+  nav a {
+    color: #d26666;
+    text-decoration: none;
+    margin: 0 20px;
+  }
+  
+  /* Media query for tablets and smaller screens */
+  @media (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+  
+    nav {
+      text-align: center;
+    }
+  
+    nav a {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
+  /* Media query for mobile phones */
+  @media (max-width: 480px) {
+    header {
+      padding: 5px;
+    }
+  
+    nav a {
+      font-size: 14px;
+    }
+  }
+  
+  /* Example of a responsive grid layout using Flexbox */
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .project-card {
+    flex: 0 1 calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media query for larger screens */
+  @media (min-width: 1200px) {
+    .project-card {
+      flex-basis: calc(25% - 20px);
+    }
+  }
+  
